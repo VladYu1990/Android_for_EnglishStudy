@@ -14,8 +14,11 @@
         android:theme="@style/Theme.My_first_App"
         tools:targetApi="31">
         <activity
+            android:name=".AddUpdateWord"
+            android:exported="false" />
+        <activity
             android:name=".WordsScreen"
-            android:exported="false" >
+            android:exported="false">
             <intent-filter>
                 <action android:name="android.intent.action.WordsScreen" />
 

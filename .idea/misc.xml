@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/layout/activity_add_update_word.xml" value="0.25729166666666664" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_words_screen.xml" value="0.25729166666666664" />
         <entry key="app/src/main/res/layout/property_main.xml" value="0.31145833333333334" />

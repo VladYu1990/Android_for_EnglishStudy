@@ -2,17 +2,11 @@ package com.example.my_first_app;
 
 
 import androidx.appcompat.app.AppCompatActivity;
-import java.sql.*;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-
-import android.widget.EditText;
-import android.widget.TextClock;
 import android.widget.TextView;
-import android.database.sqlite.SQLiteDatabase;
-import android.database.Cursor;
 
 public class MainActivity extends AppCompatActivity {
 
