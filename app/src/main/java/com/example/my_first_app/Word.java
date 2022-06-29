@@ -2,7 +2,7 @@ package com.example.my_first_app;
 
 import java.sql.*;
 
-class word {
+class Word {
     public static int testa (int b){
 
         b = b +1000;
