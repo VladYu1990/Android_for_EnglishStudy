@@ -1,6 +1,8 @@
 package com.example.my_first_app;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -52,10 +54,10 @@ public class WordsScreen extends AppCompatActivity {
         a = a + 100000;
         b.setText("aaa" + Integer.toString(a));
 
+    }
 
-
-
-
-
+    public void SwitchAddWordScreen (View v) {
+        Intent intent = new Intent(WordsScreen.this,AddUpdateWord.class);
+        startActivity(intent);
     }
 }

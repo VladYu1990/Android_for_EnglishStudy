@@ -8,30 +8,63 @@
 
     <TextView
         android:id="@+id/textScore"
-        android:layout_width="257dp"
-        android:layout_height="50dp"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="77dp"
-        tools:layout_editor_absoluteY="248dp" />
-
-    <TextView
-        android:id="@+id/textScore2"
-        android:layout_width="257dp"
-        android:layout_height="50dp"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="77dp"
-        tools:layout_editor_absoluteY="143dp" />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="77dp"
+        android:height="100dp"
+        android:text="Add word and meaning word"
+        android:textSize="50px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/button"
         android:layout_width="268dp"
         android:layout_height="80dp"
-        android:layout_marginTop="344dp"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="72dp"
         android:onClick="AddWord"
-        android:text="Button1"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="OnClick"
-        tools:layout_editor_absoluteX="77dp" />
+        android:text="Add Word"
+        android:textSize="50px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/in_meaning"
+        tools:ignore="OnClick" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/in_meaning"
+        android:layout_width="304dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="54dp"
+        android:hint="meaning word"
+        android:textSize="50px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/in_word" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/in_word"
+        android:layout_width="305dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="89dp"
+        android:layout_marginEnd="53dp"
+        android:layout_weight="1"
+        android:hint="word"
+        android:textSize="50px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textScore" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
