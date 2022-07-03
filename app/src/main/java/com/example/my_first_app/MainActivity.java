@@ -19,10 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void onButtonClickABC (View v) {
         TextView b = findViewById(R.id.button_go_to);
-        System.out.print("done1");
         Intent intent = new Intent(MainActivity.this,WordsScreen.class);
-        System.out.print("done2");
         startActivity(intent);
-        System.out.print("done3");
     }
 }

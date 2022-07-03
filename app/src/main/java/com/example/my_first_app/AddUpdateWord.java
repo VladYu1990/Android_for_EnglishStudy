@@ -5,9 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
-import java.sql.*;
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
 import android.view.View;
 import android.widget.TextView;
 
@@ -30,25 +27,15 @@ public class AddUpdateWord extends AppCompatActivity {
         String AddWordText = AddWord.getText().toString();
         String AddMeaningText = AddMeaning.getText().toString();
 
-        SQLiteDatabase myDB =
-                openOrCreateDatabase("my.db", MODE_PRIVATE, null);
 
-        myDB.execSQL(
+        WorkWithDatabase.myDB.execSQL(
                 "CREATE TABLE IF NOT EXISTS word (id int, name VARCHAR(200), mianing VARCHAR(200))"
         );
 
-        String S = "insert into word values (1,'" + AddWordText.toString() + "','" + AddMeaningText.toString() + "')";
+        String replyAddWord = Word.AddWord(AddWordText,AddMeaningText);
 
-        ScoreText.setText(S);
+        ScoreText.setText(replyAddWord);
 
 
-        Cursor myCursor =
-                myDB.rawQuery("select name from word", null);
-
-        while (myCursor.moveToNext()) {
-            String abc = myCursor.getString(0);
-            ScoreText.setText(abc);
-            //ScoreText.setText("word's added successfully");*/
-        }
     }
 }
